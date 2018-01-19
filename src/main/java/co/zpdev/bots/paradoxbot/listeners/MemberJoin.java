@@ -17,7 +17,7 @@ public class MemberJoin {
 
         MessageEmbed embed = new EmbedBuilder()
                 .setColor(Color.decode("#36393e"))
-                .setAuthor(name + " just joined Paradox Services!", null, c.getGuild().getIconUrl()).build();
+                .setAuthor(name + " just joined Paradox Services!", null, event.getUser().getEffectiveAvatarUrl()).build();
 
         c.sendMessage(embed).queue();
     }
